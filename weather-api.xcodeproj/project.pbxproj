@@ -17,6 +17,8 @@
 		2A45CA702E2F5739000689CC /* weather_apiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A45CA6F2E2F5739000689CC /* weather_apiTests.swift */; };
 		2A45CA7A2E2F5739000689CC /* weather_apiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A45CA792E2F5739000689CC /* weather_apiUITests.swift */; };
 		2A45CA7C2E2F5739000689CC /* weather_apiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A45CA7B2E2F5739000689CC /* weather_apiUITestsLaunchTests.swift */; };
+		2A45CA892E2F5758000689CC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A45CA882E2F5758000689CC /* HomeVC.swift */; };
+		2A45CA8B2E2F5882000689CC /* WeatherTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A45CA8A2E2F5882000689CC /* WeatherTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		2A45CA752E2F5739000689CC /* weather-apiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weather-apiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A45CA792E2F5739000689CC /* weather_apiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather_apiUITests.swift; sourceTree = "<group>"; };
 		2A45CA7B2E2F5739000689CC /* weather_apiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather_apiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A45CA882E2F5758000689CC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		2A45CA8A2E2F5882000689CC /* WeatherTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				2A45CA572E2F5734000689CC /* SceneDelegate.swift */,
 				2A45CA592E2F5734000689CC /* ViewController.swift */,
 				2A45CA5B2E2F5734000689CC /* Main.storyboard */,
+				2A45CA8A2E2F5882000689CC /* WeatherTVC.swift */,
+				2A45CA882E2F5758000689CC /* HomeVC.swift */,
 				2A45CA612E2F5738000689CC /* Assets.xcassets */,
 				2A45CA632E2F5738000689CC /* LaunchScreen.storyboard */,
 				2A45CA662E2F5738000689CC /* Info.plist */,
@@ -262,8 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A45CA5A2E2F5734000689CC /* ViewController.swift in Sources */,
+				2A45CA892E2F5758000689CC /* HomeVC.swift in Sources */,
 				2A45CA602E2F5734000689CC /* weather_api.xcdatamodeld in Sources */,
 				2A45CA562E2F5734000689CC /* AppDelegate.swift in Sources */,
+				2A45CA8B2E2F5882000689CC /* WeatherTVC.swift in Sources */,
 				2A45CA582E2F5734000689CC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
