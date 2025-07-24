@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class HomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
@@ -117,24 +118,36 @@ class HomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
                             
                             DispatchQueue.main.async {
                                 print("jsondata---------------->",self.jsondata)
-                                let weatherdata     = self.jsondata["weather"] as! NSArray
-                                let maindata        = self.jsondata["main"] as! NSDictionary
-                                let winddata        = self.jsondata["wind"] as! NSDictionary
+//                                let weatherdata     = self.jsondata["weather"] as! NSArray
+//                                let maindata        = self.jsondata["main"] as! NSDictionary
+//                                let winddata        = self.jsondata["wind"] as! NSDictionary
+//                                
+//                                let weather         = weatherdata[0] as! NSDictionary
+//                                
+//                                let description     = weather["description"] as! String
+//                                let humidity        = maindata["humidity"] as! Double
+//                                let pressure        = maindata["pressure"] as! Double
+//                                let wind            = winddata["speed"] as! Double
+//                                let name            = self.jsondata["name"] as! String
+//                                
+//                                
+//                                self.cities[index].Humidity     = humidity
+//                                self.cities[index].weatherDes   = description
+//                                self.cities[index].pressure     = pressure
+//                                self.cities[index].windSpeed    = wind
+                                let json = JSON(self.jsondata)
                                 
-                                let weather         = weatherdata[0] as! NSDictionary
+                                let description = json["weather"][0]["description"].stringValue
+                                let humidity = json["main"]["humidity"].doubleValue
+                                let pressure = json["main"]["pressure"].doubleValue
+                                let windSpeed = json["wind"]["speed"].doubleValue
+                                let name = json["name"].stringValue
                                 
-                                let description     = weather["description"] as! String
-                                let humidity        = maindata["humidity"] as! Double
-                                let pressure        = maindata["pressure"] as! Double
-                                let wind            = winddata["speed"] as! Double
-                                let name            = self.jsondata["name"] as! String
-                                
-                                
-                                self.cities[index].Humidity     = humidity
                                 self.cities[index].weatherDes   = description
+                                self.cities[index].Humidity     = humidity
                                 self.cities[index].pressure     = pressure
-                                self.cities[index].windSpeed    = wind
-                                
+                                self.cities[index].windSpeed    = windSpeed
+                                self.cities[index].name         = name
                                 
                                
                                 
